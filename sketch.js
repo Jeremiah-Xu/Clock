@@ -38,11 +38,11 @@ function draw() {
   arc(0, 0, 375, 375, 0, secondAngle);
   
   stroke(100,170,255);
-  let minuteAngle = map(m+s/60, 0, 60, 0, 360);
+  let minuteAngle = map(m, 0, 60, 0, 360);
   arc(0, 0, 280, 280, 0, minuteAngle);
   
   stroke(200,100,255);
-  let hourAngle = map(h%12+m/60+s/3600, 0, 12, 0, 360);
+  let hourAngle = map(h%12, 0, 12, 0, 360);
   arc(0, 0, 185, 185, 0, hourAngle);
   
   //digital display
